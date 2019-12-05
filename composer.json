@@ -1,0 +1,23 @@
+{
+    "name": "drupal/social_auth_mixer",
+    "type": "drupal-module",
+    "description": "Social Auth integration for Mixer.",
+    "keywords": ["Drupal"],
+    "license": "GPL-2.0+",
+    "homepage": "https://www.drupal.org/project/social_auth_mixer",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/social_auth_mixer",
+        "source": "http://cgit.drupalcode.org/social_auth_mixer"
+    },
+    "require": {
+        "morgann/oauth2-mixer": "^1.0",
+        "drupal/social_auth": "^2.0"
+    },
+    "authors": [
+        {
+            "name": "Artur Grochal (agrochal)",
+            "email": "arturgrochal2805@gmail.com"
+        }
+    ]
+}

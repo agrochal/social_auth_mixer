@@ -1,0 +1,6 @@
+services:
+  social_auth_mixer.manager:
+    class: Drupal\social_auth_mixer\MixerAuthManager
+    arguments:
+      - '@config.factory'
+      - '@logger.factory'

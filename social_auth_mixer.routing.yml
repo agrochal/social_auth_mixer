@@ -1,0 +1,27 @@
+social_auth_mixer.settings_form:
+  path: '/admin/config/social-api/social-auth/mixer'
+  defaults:
+    _title: 'Social Auth Mixer Settings'
+    _form: 'Drupal\social_auth_mixer\Form\MixerAuthSettingsForm'
+  requirements:
+    _permission: 'administer social api authentication'
+
+social_auth_mixer.redirect_to_mixer:
+  path: 'user/login/mixer'
+  defaults:
+    _controller: 'Drupal\social_auth_mixer\Controller\MixerAuthController::redirectToProvider'
+  requirements:
+    # Anonymous users can log in, but authenticated users can also associate a new provider.
+    _access: 'TRUE'
+  options:
+    no_cache: TRUE
+
+social_auth_mixer.callback:
+  path: '/user/login/mixer/callback'
+  defaults:
+    _controller: 'Drupal\social_auth_mixer\Controller\MixerAuthController::callback'
+  requirements:
+    # Anonymous users can log in, but authenticated users can also associate a new provider.
+    _access: 'TRUE'
+  options:
+    no_cache: TRUE

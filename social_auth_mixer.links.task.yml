@@ -1,0 +1,4 @@
+social_auth_mixer.settings.tab:
+  title: 'Mixer'
+  route_name: social_auth_mixer.settings_form
+  base_route: social_auth.integrations

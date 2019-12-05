@@ -1,0 +1,8 @@
+name: Social Auth Mixer
+description: 'Social Auth integration for Mixer.'
+type: module
+core: 8.x
+package: Social
+configure: social_auth_mixer.settings_form
+dependencies:
+  - social_auth:social_auth
