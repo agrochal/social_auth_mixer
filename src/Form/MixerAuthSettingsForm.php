@@ -89,8 +89,8 @@ class MixerAuthSettingsForm extends SocialAuthSettingsForm {
       '#description' => $this->t('Define the endpoints to be requested when user authenticates with Mixer for the first time<br>
                                   Enter each endpoint in different lines in the format <em>endpoint</em>|<em>name_of_endpoint</em>.<br>
                                   You can see the full list of valid endpoints <a href="@fields">here</a>.
-                                  <b>For instance:</b><br>
-                                  /users/{username}|details',
+                                  <br><b>For instance:</b><br>
+                                  /achievements|achievements',
                                   ['@fields' => 'https://dev.mixer.com/rest/index.html']),
     ];
 
