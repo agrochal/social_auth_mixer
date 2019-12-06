@@ -6,6 +6,7 @@ use Drupal\Core\Config\ConfigFactory;
 use Drupal\Core\Logger\LoggerChannelFactoryInterface;
 use Drupal\social_auth\AuthManager\OAuth2Manager;
 use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
+
 /**
  * Contains all the logic for Mixer OAuth2 authentication.
  */
@@ -73,7 +74,6 @@ class MixerAuthManager extends OAuth2Manager {
     if (!$domain) {
       $domain = 'https://mixer.com/api/v1';
     }
-
 
     $url = $domain . $path;
     $request = $this->client->getAuthenticatedRequest($method, $url, $this->getAccessToken(), $options);
