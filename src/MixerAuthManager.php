@@ -71,7 +71,7 @@ class MixerAuthManager extends OAuth2Manager {
    */
   public function requestEndPoint($method, $path, $domain = NULL, array $options = []) {
     if (!$domain) {
-      $domain = 'https://mixer.com/api/v1/oauth';
+      $domain = 'https://mixer.com/api/v1';
     }
 
 
