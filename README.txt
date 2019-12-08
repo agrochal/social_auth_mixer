@@ -92,3 +92,4 @@ MAINTAINERS
 
 Current maintainers:
  * Artur Grochal (agrochal) - https://www.drupal.org/u/agrochal
+ * Getulio Valentin Sánchez (gvso) - https://www.drupal.org/u/gvso
